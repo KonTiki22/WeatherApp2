@@ -40,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
                 Date sunrise_time = new Date(weather.sys.sunrise*1000L);
                 Date sunset_time = new Date(weather.sys.sunset*1000L);
                 long s = weather.sys.sunset - weather.sys.sunrise;
-                SimpleDateFormat dtformat = new SimpleDateFormat("HH:mm:ss");
+                SimpleDateFormat dtformat = new SimpleDateFormat("HH:mm");
                 sunrise.setText("Sunrise time: " + dtformat.format(sunrise_time));
                 sunset.setText("Sunset time: " + dtformat.format(sunset_time));
-                daylong.setText("Daytime: " + String.format("%2d:%02d:%02d", s / 3600, (s % 3600) / 60, (s % 60)));
+                daylong.setText("Daytime: " + String.format("%2d:%02d", s / 3600, (s % 3600) / 60));
                 //Log.d("myTag1: good", response.body().toString());
                 //Log.d("myTag2: good", retrofit.baseUrl().url().toString());
             }
