@@ -11,7 +11,7 @@ import retrofit.http.POST;
 public interface OpenWeatherMapAPI {
     String url = "http://api.openweathermap.org";
     String key ="81075f27a891b5b5f28b4dd74aad6fc4";
-    @GET("/data/2.5/weather?id=2023469&units=metric&appid=81075f27a891b5b5f28b4dd74aad6fc4")
+    @GET("/data/2.5/forecast?q=Irkutsk&units=metric&appid=81075f27a891b5b5f28b4dd74aad6fc4")
     //@GET("/")
-    Call<Weather> getToken();
+    Call<Forecast> getToken();
 }
