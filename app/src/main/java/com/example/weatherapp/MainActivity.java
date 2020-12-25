@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 float tvalue = forecast.list[0].main.get("temp");
                 temp.setText(String.format("%.0f°", tvalue));
                 humidity.setText(String.format("Humidity: %.0f%%", forecast.list[0].main.get("humidity")));
-                //progressBar.setProgress(Math.round(tvalue + 40));
+                progressBar.setProgress(Math.round(tvalue + 40));
 
 
                 float deg = forecast.list[0].wind.get("deg");
