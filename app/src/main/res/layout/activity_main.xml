@@ -69,8 +69,8 @@
             android:id="@+id/progressBar"
             android:layout_width="190dp"
             android:layout_height="10dp"
-            android:layout_marginTop="124dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="16dp"
             android:background="#2A040303"
             android:max="80"
             android:progress="30"
@@ -80,12 +80,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="276dp"
+            android:text="Temperature dynamics for five days:"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <com.jjoe64.graphview.GraphView
             android:id="@+id/graph"
             android:layout_width="match_parent"
-            android:background="#AFFF"
             android:layout_height="200dp"
-            android:layout_marginTop="280dp"
+            android:layout_marginTop="308dp"
+            android:background="#AFFF"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                         return super.formatLabel(value, isValueX);
                     }
                 });*/
-                graph.getGridLabelRenderer().setNumHorizontalLabels(5);
+                graph.getGridLabelRenderer().setHorizontalLabelsVisible(false);
 
             }
             else {
